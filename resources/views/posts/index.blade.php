@@ -4,6 +4,10 @@
     Droidtronix - Open Source Hub
 @endsection
 
+@section('meta')
+    @include('posts.partials._indexmeta')
+@endsection
+
 @section('pagetitle')
     <div id="sp-title" class="col-sm-12 col-md-12">
         <div class="sp-column ">
@@ -18,7 +22,7 @@
                             <h2>Latest Posts</h2>
                         </div>
                         <div class="col-sm-4">
-                            @include('partials._search')
+                            @include('posts.partials._search')
                         </div>
                     </div>
                 </div>
@@ -94,7 +98,7 @@
 
 @section('scripts')
     <script>
-        var popuptime = 20000;
-        @include('partials._likeus')
+        var popuptime = 25000;
+        @include('posts.partials._likeus')
     </script>
 @endsection

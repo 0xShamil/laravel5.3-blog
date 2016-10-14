@@ -49,6 +49,9 @@
                         <span>Users</span>
                     </a>
                 </li>
+            @endcan
+
+            @can('manage-inbox')
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-envelope"></i> <span>Mailbox</span>
@@ -60,8 +63,48 @@
                         <li>
                             <a href="{{ route('admin.mailbox') }}">Inbox
                                 <span class="pull-right-container">
-                                    <span class="label label-primary pull-right">13</span>
+                                    <span class="label label-primary pull-right">{{ App\Models\Message::getUnreadCount() }}</span>
                                 </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            @endcan
+
+            <li class="header">Settings</li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user"></i> <span>Profile Settings</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="{{ route('admin.user.profile', Auth::user()->username) }}"><i class="fa fa-eye"></i> View Profile</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.user.edit', Auth::user()->username) }}"><i class="fa fa-wrench"></i> Edit Profile</a>
+                    </li>
+                </ul>
+            </li>
+
+            @can('manage-settings')
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-cogs"></i> <span>Blog Settings</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="{{ route('admin.settings.index') }}"><i class="fa fa-cog"></i> View Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('admin.settings.edit') }}"><i class="fa fa-wrench"></i> Edit Settings
                             </a>
                         </li>
                     </ul>

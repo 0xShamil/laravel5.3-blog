@@ -24,7 +24,7 @@
                     <!-- /.mailbox-read-info -->
                     <div class="mailbox-controls with-border text-center">
                         <div class="btn-group">
-                            <a href="#" type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
+                            <a href="{{ route('admin.mailbox.destroy', $msg->id) }}" id="delete-btn" type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
                                 <i class="fa fa-trash-o"></i>
                             </a>
                         </div>
@@ -39,7 +39,7 @@
 
                     <div class="box-footer">
                         <div class="pull-right">
-                            <a href="#" type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Delete</a>
+                            <a href="{{ route('admin.mailbox.destroy', $msg->id) }}" id="delete-btn" type="button" class="btn btn-default"><i class="fa fa-trash-o"></i> Delete</a>
                         </div>
 
                     </div>
@@ -50,4 +50,8 @@
         </div>
         <!-- /.row -->
     </section>
+@endsection
+
+@section('scripts')
+    @include('admin.partials.confirmdel')
 @endsection

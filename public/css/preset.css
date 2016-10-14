@@ -1,0 +1,70 @@
+.sp-megamenu-parent>li.active>a,
+.sp-megamenu-parent>li:hover>a {
+    color: #66ad44;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item>a:hover {
+    background: #66ad44;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active>a {
+    color: #66ad44;
+}
+#offcanvas-toggler>i:hover {
+    color: #66ad44;
+}
+.offcanvas-menu {
+    background: #66ad44;
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul>li a {
+    color: #fff;
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul>li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+ul.social-icons>li a:hover {
+    color: #66ad44;
+}
+.layout-boxed .body-innerwrapper {
+    background: #f2f2f2;
+}
+.sp-module ul>li>a {
+    color: #000000;
+}
+.sp-module ul>li>a:hover {
+    color: #66ad44;
+}
+.sp-module .latestnews>div>a {
+    color: #000000;
+}
+.sp-module .latestnews>div>a:hover {
+    color: #66ad44;
+}
+.sp-module .tagscloud .tag-name:hover {
+    background: #66ad44;
+}
+.search .btn-toolbar button {
+    background: #66ad44;
+}
+.post-format {
+    background: #66ad44;
+}
+.voting-symbol span.star.active:before {
+    color: #66ad44;
+}
+.sp-rating span.star:hover:before,
+.sp-rating span.star:hover~span.star:before {
+    color: #508836;
+}
+.entry-link,
+.entry-quote {
+    background: #66ad44;
+}
+blockquote {
+    border-color: #66ad44;
+}
+.carousel-left:hover,
+.carousel-right:hover {
+    background: #66ad44;
+}
+.sp-comingsoon body {
+    background-color: #66ad44;
+}

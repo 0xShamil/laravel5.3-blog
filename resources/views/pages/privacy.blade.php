@@ -48,13 +48,7 @@
                                         <div class="sppb-addon sppb-addon-text-block sppb-text-left ">
                                             <h3 class="sppb-addon-title" style="margin-top:0px;">Introduction</h3>
                                             <div class="sppb-addon-content">
-                                            	We at droidtronix.com take your privacy very seriously. We do not collect any personal information about our users except information which is necessary for administrative purposes.
-
-                                            	We do not sell, share or disclose any of your personal information with any third parties.
-
-												We may use third-party advertising or other services to make droidtronix.com better. These services may use some information about your activity on this site in order to provide you with better services. Even in this case your personal information is not shared
-
-												droidtronix.com may use cookies to store some information to improve the quality of our service. Cookies are stored on your computer and can be deleted by you or you can prevent the storage of cookies.
+                                            	{!! $sets->blog_privacy !!}
                                             </div>
                                         </div>
                                         <div class="sppb-empty-space  clearfix" style="margin-bottom:30px;"></div>

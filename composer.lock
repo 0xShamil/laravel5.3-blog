@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1fec13898ff807fbd2365ee3578dcda8",
-    "content-hash": "3cd28c5b6395412bc554250c1b6610cb",
+    "hash": "ce0b70c061cf78c339b39e766a54e5b4",
+    "content-hash": "ad88f049891d6feddf0178eac7d9bb82",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -650,16 +650,16 @@
         },
         {
             "name": "laravel/scout",
-            "version": "v1.1.6",
+            "version": "v1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/scout.git",
-                "reference": "e0eff31c5443a83c8e5ae3778cb67297970c0ae8"
+                "reference": "08241b3638c60bc858f4ee01e7c8eb01644098d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/scout/zipball/e0eff31c5443a83c8e5ae3778cb67297970c0ae8",
-                "reference": "e0eff31c5443a83c8e5ae3778cb67297970c0ae8",
+                "url": "https://api.github.com/repos/laravel/scout/zipball/08241b3638c60bc858f4ee01e7c8eb01644098d7",
+                "reference": "08241b3638c60bc858f4ee01e7c8eb01644098d7",
                 "shasum": ""
             },
             "require": {
@@ -709,7 +709,7 @@
                 "laravel",
                 "search"
             ],
-            "time": "2016-10-05 15:30:00"
+            "time": "2016-10-10 21:08:11"
         },
         {
             "name": "laravelcollective/html",
@@ -1168,16 +1168,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "5277094ed527a1c4477177d102fe4c53551953e0"
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/5277094ed527a1c4477177d102fe4c53551953e0",
-                "reference": "5277094ed527a1c4477177d102fe4c53551953e0",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "shasum": ""
             },
             "require": {
@@ -1211,7 +1211,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-09-19 16:02:08"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "psy/psysh",
@@ -2512,16 +2512,16 @@
         },
         {
             "name": "watson/sitemap",
-            "version": "2.0.15",
+            "version": "2.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dwightwatson/sitemap.git",
-                "reference": "aef2ba42379cb061b73d139c28360053ec5f79b8"
+                "reference": "6b53c1fbc2b427e93edbced56cfd7b8aa5e41434"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dwightwatson/sitemap/zipball/aef2ba42379cb061b73d139c28360053ec5f79b8",
-                "reference": "aef2ba42379cb061b73d139c28360053ec5f79b8",
+                "url": "https://api.github.com/repos/dwightwatson/sitemap/zipball/6b53c1fbc2b427e93edbced56cfd7b8aa5e41434",
+                "reference": "6b53c1fbc2b427e93edbced56cfd7b8aa5e41434",
                 "shasum": ""
             },
             "require": {
@@ -2554,7 +2554,7 @@
                 "laravel",
                 "sitemaps"
             ],
-            "time": "2016-09-07 13:46:35"
+            "time": "2016-10-13 11:12:13"
         }
     ],
     "packages-dev": [
@@ -3348,16 +3348,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "3.3.1",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "03500345483e1e17b52e2e4d34a89c9408ab2902"
+                "reference": "238d7a2723bce689c79eeac9c7d5e1d623bb9dc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/03500345483e1e17b52e2e4d34a89c9408ab2902",
-                "reference": "03500345483e1e17b52e2e4d34a89c9408ab2902",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/238d7a2723bce689c79eeac9c7d5e1d623bb9dc2",
+                "reference": "238d7a2723bce689c79eeac9c7d5e1d623bb9dc2",
                 "shasum": ""
             },
             "require": {
@@ -3403,7 +3403,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2016-10-04 11:03:26"
+            "time": "2016-10-09 07:01:45"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

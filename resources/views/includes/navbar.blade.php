@@ -4,8 +4,8 @@
             <div class="sp-column ">
                 <a class="logo" href="/">
                     <h1>
-                        <img class="sp-default-logo" src="/img/logo.png" alt="droidtronix">
-                        <img class="sp-retina-logo" src="/img/logo@2x.png" alt="droidtronix" width="200" height="20">
+                        <img class="sp-default-logo" src="/assets/logo.png" alt="droidtronix">
+                        <img class="sp-retina-logo" src="/assets/logo@2x.png" alt="droidtronix" width="200" height="20">
                     </h1>
                 </a>
             </div>
@@ -37,7 +37,7 @@
                         </li>
                     @else
                         <li class="account-login">
-                            <a class="btn btn-success btn-md btn-login hidden-sm hidden-xs" href="/login">Login</a>
+                            <a class="btn btn-primary btn-md btn-login hidden-sm hidden-xs" href="/login">Login</a>
                         </li>
                     @endif
                 </ul>
@@ -71,6 +71,29 @@
                                                                 </a>
                                                             </li>
                                                         @endif
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sp-menu-item sp-has-child">
+                            <a href="#"><i class="fa fa-share-alt"></i> </a>
+                            <div class="sp-dropdown sp-dropdown-main sp-dropdown-mega sp-menu-right" style="width: 180px;">
+                                <div class="sp-dropdown-inner">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul class="sp-mega-group">
+                                                <li class="sp-menu-item sp-has-child">
+                                                    <ul class="sp-mega-group-child sp-dropdown-items">
+                                                        <li class="sp-menu-item">
+                                                            <a target="_blank" href="https://www.facebook.com/droidtronix"><i class="fa fa-facebook-official"></i> Facebook</a>
+                                                        </li>
+                                                        <li class="sp-menu-item">
+                                                            <a target="_blank" href="https://twitter.com/droidtronix"><i class="fa fa-twitter-square"></i> Twitter</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                             </ul>

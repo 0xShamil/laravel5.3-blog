@@ -8,8 +8,6 @@
         <title>@yield('title')</title>
 
         <!-- site meta -->
-        <meta name="description" content="Droidtronix is a blog on programming and open source technologies">
-
         @hasSection('meta')
             @yield('meta')
         @endif
@@ -41,7 +39,7 @@
 
     </head>
 
-    <body class="site com-content view-category layout-blog ltr sticky-header layout-fluid">
+    <body class="skeleton ltr sticky-header layout-fluid">
 
         <div class="body-innerwrapper">
             <header id="sp-header">
@@ -81,7 +79,7 @@
 
 
 
-        <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 
@@ -92,6 +90,8 @@
         <!-- sweetalert -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/5.2.0/sweetalert2.js"></script>
         @include('sweet::alert')
+
+        <script src="{{ asset('js/js-cookie.js') }}"></script>
 
         @hasSection('scripts')
             @yield('scripts')

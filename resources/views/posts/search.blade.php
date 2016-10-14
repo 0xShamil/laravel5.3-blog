@@ -14,7 +14,7 @@
                             <h2>{{ $posts->count() }} results found</h2>
                         </div>
                         <div class="col-sm-4">
-                            @include('partials._search')
+                            @include('posts.partials._search')
                         </div>
                     </div>
                 </div>

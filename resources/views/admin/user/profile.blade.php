@@ -48,6 +48,18 @@
 								<input type="email" class="form-control" name="Email" placeholder="Enter email" value="{{ $user->email }}" disabled="true">
 							</div>
 							<div class="form-group">
+								<label for="Email">Facebook:</label>
+								<input class="form-control" name="facebook" placeholder="Facebook profile" value="{{ $user->facebook }}" disabled="true">
+							</div>
+							<div class="form-group">
+								<label for="Email">Twitter:</label>
+								<input class="form-control" name="twitter" placeholder="Twitter Profile" value="{{ $user->twitter }}" disabled="true">
+							</div>
+							<div class="form-group">
+								<label for="Email">LinkedIn:</label>
+								<input class="form-control" name="linkedin" placeholder="LinkedIn Profile" value="{{ $user->linkedin }}" disabled="true">
+							</div>
+							<div class="form-group">
 								<label for="biography">Bio:</label>
 								<textarea class="form-control" name="bio" rows="5" id="biography" disabled="true">{{ $user->bio }}</textarea>
 							</div>

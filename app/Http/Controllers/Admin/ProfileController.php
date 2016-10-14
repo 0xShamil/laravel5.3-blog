@@ -37,13 +37,19 @@ class ProfileController extends BaseController
         $this->validate($request, [
             'first_name' => 'required',
             'last_name' => 'required',
-            'bio' => 'required'
+            'bio' => 'required',
+            'facebook' => 'alpha_dash',
+            'twitter' => 'alpha_dash',
+            'linkedin' => 'alpha_dash',
         ]);
 
         $user->fill([
             'first_name' => $request->input('first_name'),
             'last_name' => $request->input('last_name'),
-            'bio' => $request->input('bio')
+            'bio' => $request->input('bio'),
+            'facebook' => $request->input('facebook'),
+            'twitter' => $request->input('twitter'),
+            'linkedin' => $request->input('linkedin'),
         ])->save();
 
         Alert::success('Profile Updated', 'Success')->persistent("Close");

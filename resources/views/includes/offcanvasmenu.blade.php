@@ -5,12 +5,12 @@
             <h3 class="sp-module-title">Droidtronix</h3>
             <div class="sp-module-content">
                 <ul class="nav menu">
-                    <li class="item-101"><a href="/">Home</a></li>
-                    <li class="item-105 deeper parent">
+                    <li><a href="/">Home</a></li>
+                    <li class="deeper parent">
                         <a href="#">Categories</a>
                         <span class="offcanvas-menu-toggler collapsed" data-toggle="collapse" data-target="#collapse-menu-105" aria-expanded="false" aria-controls="collapse-menu-105"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
                         <ul class="collapse" id="collapse-menu-105">
-                            @if($cats->count())                                    
+                            @if($cats->count())
                                 @foreach($cats as $cat)
                                     <li class="deeper">
                                         <a href="{{ route('category.show', $cat->slug) }}"> {{ $cat->name }} </a>

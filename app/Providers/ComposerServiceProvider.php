@@ -26,6 +26,10 @@ class ComposerServiceProvider extends ServiceProvider
         View::composer(
             '*', 'App\Http\Composers\TagsComposer'
         );
+
+        View::composer(
+            '*', 'App\Http\Composers\SettingsComposer'
+        );
     }
 
     /**

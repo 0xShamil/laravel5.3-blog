@@ -4,6 +4,7 @@
             <h3 class="sp-module-title">Information</h3>
             <div class="sp-module-content">
                 <ul class="nav menu">
+                    <li><a href="/login">Login</a></li>
                     <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
                     <li><a href="{{ route('copyright') }}">Copyright Policy</a></li>
                 </ul>

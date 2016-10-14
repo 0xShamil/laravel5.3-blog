@@ -5,7 +5,7 @@
 @endsection
 
 @section('meta')
-    @include('partials._meta')
+    @include('posts.partials._postmeta')
 @endsection
 
 @section('styles')
@@ -28,7 +28,7 @@
                             <h2>Article</h2>
                         </div>
                         <div class="col-sm-4">
-                            @include('partials._search')
+                            @include('posts.partials._search')
                         </div>
                     </div>
                 </div>
@@ -41,13 +41,13 @@
     <div id="sp-component" class="col-sm-8 col-md-8">
         <div class="sp-column ">
             <div id="system-message-container"></div>
-            <article class="item item-page" itemscope itemtype="http://schema.org/Article">
+            <article class="item item-page">
                 <meta itemprop="inLanguage" content="en-GB"/>
                 <div class="entry-header">
                     <dl class="article-info">
                         <dt class="article-info-term"></dt>
                         <dd class="create">
-                            <time datetime="2016-09-26T16:21:33+06:00" itemprop="dateCreated" data-toggle="tooltip" title="Created Date">
+                            <time datetime="{{ $post->created_at->diffForHumans() }}" itemprop="dateCreated" data-toggle="tooltip" title="Created Date">
                             {{ $post->created_at->diffForHumans() }} </time>
                         </dd>
                         /
@@ -65,17 +65,7 @@
                     <img src="/uploads/{{ $post->image }}" alt="" itemprop="image"/>
                 </div>
                 <div class="social-share">
-                    <ul>
-                        <li>
-                            <a class="share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(request()->fullUrl()) }}"><i class="fa fa-facebook"></i><span class="hidden-xs">&nbsp; Facebook</span></a>
-                        </li>
-                        <li>
-                            <a class="share-twitter" target="_blank" href="https://twitter.com/intent/tweet?url={{ urlencode(request()->fullUrl()) }}"><i class="fa fa-twitter"></i></i><span class="hidden-xs">&nbsp; Twitter</span></a>
-                        </li>
-                        <li>
-                            <a class="share-google-plus" target="_blank" href="https://plus.google.com/share?url={{ urlencode(request()->fullUrl()) }}"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                    </ul>
+                    @include('posts.partials._share')
                 </div>
                 <div itemprop="articleBody" class="blog-post">
                     {!! $post->content !!}
@@ -104,9 +94,17 @@
                             </div>
                             <div class="profile-social">
                                 <ul>
-                                    <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    @if($post->user->facebook)
+                                        <li><a target="_blank" href="https://www.facebook.com/{{ $post->user->facebook }}"><i class="fa fa-facebook"></i></a></li>
+                                    @endif
+
+                                    @if($post->user->twitter)
+                                        <li><a target="_blank" href="https://twitter.com/{{ $post->user->twitter }}"><i class="fa fa-twitter"></i></a></li>
+                                    @endif
+
+                                    @if($post->user->linkedin)
+                                        <li><a target="_blank" href="https://www.linkedin.com/in/{{ $post->user->linkedin }}"><i class="fa fa-linkedin"></i></a></li>
+                                    @endif
                                 </ul>
                             </div>
                         </div>
@@ -123,7 +121,7 @@
 @section('scripts')
     <script src="{{ asset('vendor/prismjs/prism.js') }}"></script>
     <script>
-        var popuptime = 2000;
-        @include('partials._likeus')
+        var popuptime = 35000000000;
+        @include('posts.partials._likeus')
     </script>
 @endsection

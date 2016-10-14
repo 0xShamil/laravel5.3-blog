@@ -259,6 +259,30 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'can:access-dashboar
 		'as' => 'admin.mailbox.mail'
 	]);
 
+	Route::get('/mailbox/destroy/{message}', [
+		'uses' => 'MailboxController@destroy',
+		'as' => 'admin.mailbox.destroy'
+	]);
+
+
+	/**
+	 * Settings
+	 */
+	Route::get('/settings/index', [
+		'uses' => 'SettingsController@index',
+		'as' => 'admin.settings.index'
+	]);
+
+	Route::get('/settings/edit', [
+		'uses' => 'SettingsController@showSettingsEditForm',
+		'as' => 'admin.settings.edit'
+	]);
+
+	Route::post('/settings/update/{setting}', [
+		'uses' => 'SettingsController@update',
+		'as' => 'admin.settings.update'
+	]);
+
 });
 
 /*

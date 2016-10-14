@@ -42,7 +42,7 @@
             <div class="content">
                 <div class="title">
                     <h1>Unauthorized!</h1>
-                    <img src="/img/401.gif" alt="">
+                    <img src="{{ asset('assets/401.gif') }}" alt="">
                 </div>
             </div>
         </div>

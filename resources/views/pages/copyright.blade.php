@@ -46,16 +46,7 @@
                                     <div class="sppb-addon-container " style="" data-sppb-wow-duration="300ms">
                                         <div class="sppb-addon sppb-addon-text-block sppb-text-left ">
                                             <div class="sppb-addon-content">
-                                            	<p><i>droidtronix.com</i> fully complies with the Digital Millennium Copyrigh Act (<strong>DMCA</strong>) and European Union Copyright Directive (<strong>EUCD</strong>). </p>
-
-    											<p>If you have information about any copyrighted material owned by you which is located on <i>droidtronix.com</i> and you want us to remove it, please, take the following simple steps:
-
-											    <p>- Send us an email to <strong>support@droidtronix.com</strong> with the Subject "<strong>Copyright abuse</strong>"</p>
-											    <p>- Provide the exact link to the droidtronix.com web-page which contains the copyrighted material owned by you.
-											    <p>- Send us an email from a verifiable email address (e.g. yourname@domain.com or yourname@yourcompany.com) </p>
-
-											    <p>That’s all. Once we receive your links, we try to solve the problem as quickly as possible.</p>
-											    <p>We usually try to resolve the matter within 48 hours.</p>
+                                            	{!! $sets->blog_copyright !!}
                                             </div>
                                         </div>
                                     </div>

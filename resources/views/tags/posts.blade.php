@@ -18,9 +18,7 @@
                             <h2>tagged as <strong>{{ $tag }}</strong></h2>
                         </div>
                         <div class="col-sm-4">
-                            <form class="form-product-search" action="#" method="get">
-                                <input class="input-product-search" name="search" type="text" placeholder="Search this blog" value=""><i class="sb-icon-search"></i>
-                            </form>
+                            @include('posts.partials._search')
                         </div>
                     </div>
                 </div>
@@ -44,12 +42,12 @@
                                             <dt class="article-info-term"></dt>
                                             <dd class="create">
                                                 <time datetime="2016-09-26T16:21:33+06:00" itemprop="dateCreated" data-toggle="tooltip" title="Created Date">
-                                                    {{ $post->created_at->diffForHumans() }} 
+                                                    {{ $post->created_at->diffForHumans() }}
                                                 </time>
                                             </dd>
                                             /
                                             <dd class="category-name">
-                                                <a href="#" itemprop="genre" data-toggle="tooltip" title="Article Category">{{ $post->category->name }}</a> 
+                                                <a href="#" itemprop="genre" data-toggle="tooltip" title="Article Category">{{ $post->category->name }}</a>
                                             </dd>
                                         </dl>
                                         <h2 itemprop="name">
