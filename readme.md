@@ -1,8 +1,6 @@
-# Droidtronix
+# Laravel Blog
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](license.txt)
-
-A cool simple blog (created for personal use). The code is entirely open source and licensed under [the MIT license](license.txt). Feel free to contribute by sending in a pull request.
+A cool simple blog written in Laravel 5.3. 
 
 
 ## License
